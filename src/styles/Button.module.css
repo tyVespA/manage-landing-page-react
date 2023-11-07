@@ -1,0 +1,22 @@
+.primary,
+.secondary {
+  border: transparent;
+  padding: 15px 35px;
+  border-radius: 30px;
+  transition: background-color 0.2s;
+}
+
+.primary {
+  color: var(--veryLightGray);
+  background-color: var(--brightRed);
+  box-shadow: hsla(12, 88%, 59%, 0.507) 0px 5px 15px;
+}
+
+.primary:hover {
+  background-color: hsla(12, 88%, 59%, 0.795);
+}
+
+.secondary {
+  color: var(--brightRed);
+  background-color: var(--veryLightGray);
+}
