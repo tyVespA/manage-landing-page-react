@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
-import Logo from "../assets/images/logo.svg";
 import Button from "./Button";
+import Logo from "../assets/images/logo.svg";
+import BackgroundImg from "../assets/images/bg-tablet-pattern.svg";
 import HamburgerIcon from "../assets/images/icon-hamburger.svg";
 import CloseNavIcon from "../assets/images/icon-close.svg";
 
@@ -20,6 +21,7 @@ function Navbar() {
             : styles.darkBackgroundDisabled
         }
       ></div>
+      <img src={BackgroundImg} alt="" className={styles.backgroudImg} />
       <header className={styles.header}>
         <img src={Logo} alt="logo" />
         <nav className={openMobileMenu ? styles.fadedIn : styles.fadedOut}>
