@@ -13,6 +13,13 @@ function Navbar() {
 
   return (
     <header className={styles.header}>
+      <div
+        className={
+          openMobileMenu
+            ? styles.darkBackgroundActive
+            : styles.darkBackgroundDisabled
+        }
+      ></div>
       <img src={Logo} alt="logo" />
       <nav className={openMobileMenu ? styles.fadedIn : styles.fadedOut}>
         <ul>
