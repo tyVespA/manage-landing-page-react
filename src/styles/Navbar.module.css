@@ -1,9 +1,11 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-inline: 30px;
+  align-items: center;
   padding-block: 75px;
+  max-width: 1400px;
+  margin-inline: auto;
 }
 
 .header ul {
@@ -45,10 +47,10 @@
 @media screen and (max-width: 970px) {
   .darkBackgroundActive,
   .darkBackgroundDisabled {
-    color: black;
-    z-index: -99;
-    background-image: linear-gradient(to bottom, #fff, rgba(0, 0, 0, 0.459));
     position: absolute;
+    z-index: -99;
+    color: black;
+    background-image: linear-gradient(to bottom, #fff, rgba(0, 0, 0, 0.459));
     top: 0;
     height: 100vh;
     right: 0;
@@ -69,8 +71,8 @@
     position: absolute;
     top: 150px;
     transition: all 0.25s ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
     padding-block: 35px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
     font-weight: 700;
   }
   .fadedOut {
@@ -86,8 +88,8 @@
   .header ul {
     flex-direction: column;
     gap: 25px;
-    text-align: center;
     padding-left: 0;
+    text-align: center;
   }
   .ctaBtn {
     display: none;
@@ -95,8 +97,8 @@
   .mobileNavBtn {
     display: block;
   }
+  padding: 0;
   .mobileNavBtn button {
-    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
