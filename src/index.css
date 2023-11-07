@@ -53,4 +53,11 @@ h6 {
 
 body {
   font-family: "Be Vietnam Pro", sans-serif;
+  color: var(--darkBlue);
+}
+
+/* BASE TWEAKS */
+
+button {
+  cursor: pointer;
 }
