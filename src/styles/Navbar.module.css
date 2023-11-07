@@ -4,7 +4,7 @@
   padding-inline: 30px;
   align-items: center;
   padding-block: 75px;
-  max-width: 1400px;
+  max-width: 1350px;
   margin-inline: auto;
 }
 
@@ -97,7 +97,6 @@
   .mobileNavBtn {
     display: block;
   }
-  padding: 0;
   .mobileNavBtn button {
     display: flex;
     align-items: center;
