@@ -6,7 +6,7 @@ function SectionOne() {
   return (
     <div className={styles.sectionOne}>
       <img src={BackgroundImage} alt="" />
-      <div>
+      <div className={styles.textSection}>
         <h2> What’s different about Manage?</h2>
         <p>
           Manage provides all the functionality your team needs, without the
