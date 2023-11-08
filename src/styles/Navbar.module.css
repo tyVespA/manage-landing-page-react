@@ -113,4 +113,8 @@
     align-items: center;
     justify-content: center;
   }
+  .mobileNavBtn button img {
+    min-height: 22px;
+    max-width: 25px;
+  }
 }
