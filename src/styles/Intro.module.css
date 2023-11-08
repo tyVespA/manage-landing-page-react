@@ -1,0 +1,47 @@
+.introContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.introText,
+.introImage {
+  flex: 1;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.introText h1 {
+  font-size: 50px;
+  max-width: 15ch;
+  line-height: 1.25;
+}
+
+.introText p {
+  max-width: 33ch;
+}
+
+.introText button {
+  align-self: start;
+}
+
+@media screen and (max-width: 970px) {
+  .introContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .introText {
+    align-items: center;
+    text-align: center;
+  }
+  .introText h1 {
+    font-size: 40px;
+  }
+  .introText button {
+    align-self: center;
+  }
+}
