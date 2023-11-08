@@ -1,0 +1,41 @@
+.footerBannerContainer {
+  background-color: var(--brightRed);
+  color: white;
+  overflow: hidden;
+}
+
+.footerBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 80px;
+
+  position: relative;
+  z-index: 99;
+}
+
+.footerBanner img {
+  position: absolute;
+  z-index: -99;
+  opacity: 0.15;
+  top: -50px;
+  left: -20%;
+}
+
+.footerBanner h2 {
+  max-width: 20ch;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 750px) {
+  .footerBanner {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .footerBanner img {
+    left: -70%;
+    top: 50px;
+  }
+}
