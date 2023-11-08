@@ -68,7 +68,7 @@ function Footer() {
         </div>
         <div className={styles.newsletterAndCopyright}>
           <div>
-            <input type="text" />
+            <input type="text" placeholder="Updates in your inbox…" />
             <Button type="primaryNoShadow" shadow="noShadow">
               GO
             </Button>
