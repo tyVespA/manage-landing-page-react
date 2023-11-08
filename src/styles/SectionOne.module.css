@@ -1,0 +1,71 @@
+.sectionOne {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sectionOne img {
+  position: absolute;
+  z-index: -99;
+  bottom: -125%;
+  left: -50%;
+}
+
+.sectionOne div {
+  flex: 1;
+}
+
+.sectionOne h2 {
+  font-size: 35px;
+  line-height: 1.2;
+  padding-bottom: 30px;
+  max-width: 20ch;
+}
+
+.sectionOne div:first-child p {
+  max-width: 33ch;
+}
+
+.bulletPointsSection {
+}
+
+.bulletPointsSection ol {
+  list-style-type: none;
+  counter-reset: count;
+}
+
+.bulletPointsSection ol li {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.bulletPointsSection ol li::before {
+  position: absolute;
+  left: -80px;
+  background-color: var(--brightRed);
+  color: white;
+  width: 60px;
+  font-weight: 700;
+  height: 35px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bulletPointsSection ol li:first-child::before {
+  content: "01";
+}
+
+.bulletPointsSection ol li:nth-child(2)::before {
+  content: "02";
+}
+
+.bulletPointsSection ol li:nth-child(3)::before {
+  content: "03";
+}
+
+.bulletPointsSection p {
+  max-width: 42ch;
+  padding-top: 15px;
+}
