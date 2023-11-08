@@ -1,0 +1,26 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--veryLightGray);
+  padding: 70px 30px 30px 30px;
+  position: relative;
+}
+
+.testimonial img {
+  position: absolute;
+  width: 90px;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.testimonial .name {
+  font-weight: 700;
+  color: var(--darkBlue);
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  max-width: 45ch;
+  text-align: center;
+}
