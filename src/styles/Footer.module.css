@@ -17,6 +17,10 @@
   justify-content: space-between;
 }
 
+.mobileCopyright {
+  display: none;
+}
+
 .socials {
   display: flex;
   gap: 15px;
@@ -78,4 +82,34 @@
 
 .newsletterAndCopyright p {
   text-align: end;
+}
+
+@media screen and (max-width: 990px) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+  }
+  .logoAndSocials {
+    align-items: center;
+  }
+  .desktopCopyright {
+    display: none;
+  }
+  .mobileCopyright {
+    display: block;
+  }
+  .logoAndSocials {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .footer img {
+    max-width: 163px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .newsletterAndCopyright div:first-child {
+    flex-direction: column;
+  }
 }

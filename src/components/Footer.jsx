@@ -8,6 +8,9 @@ function Footer() {
     <footer className={styles.footerContainer}>
       <div className={styles.footer}>
         <div className={styles.logoAndSocials}>
+          <p className={styles.mobileCopyright}>
+            Copyright 2023. All Rights Reserved
+          </p>
           <img src={LogoWhite} alt="logo" />
           <div className={styles.socials}>
             <a href="#">
@@ -52,8 +55,7 @@ function Footer() {
               <a href="#">About Us</a>
             </li>
           </ul>
-        </div>
-        <div className={styles.links}>
+
           <ul>
             <li>
               <a href="#">Careers</a>
@@ -73,7 +75,9 @@ function Footer() {
               GO
             </Button>
           </div>
-          <p>Copyright 2023. All Rights Reserved</p>
+          <p className={styles.desktopCopyright}>
+            Copyright 2023. All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>
