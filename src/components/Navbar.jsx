@@ -12,6 +12,8 @@ function Navbar() {
     setOpenMobileMenu(!openMobileMenu);
   }
 
+  // TODO: move state up - to set overflow hidden on whole page when the menu is open
+
   return (
     <>
       <div
