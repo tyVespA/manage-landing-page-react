@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/Footer.module.css";
 import Button from "./Button";
 import LogoWhite from "../assets/images/logoWhite.svg";
 
 function Footer() {
+  const [email, setEmail] = useState("");
+
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footer}>
@@ -69,12 +71,22 @@ function Footer() {
           </ul>
         </div>
         <div className={styles.newsletterAndCopyright}>
-          <div>
-            <input type="text" placeholder="Updates in your inbox…" />
+          <form
+            // onSubmit={(e) => {
+            //   e.preventDefault();
+            // }}
+            noValidate
+          >
+            <input
+              type="email"
+              placeholder="Updates in your inbox…"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
             <Button type="primaryNoShadow" shadow="noShadow">
               GO
             </Button>
-          </div>
+          </form>
           <p className={styles.desktopCopyright}>
             Copyright 2023. All Rights Reserved
           </p>

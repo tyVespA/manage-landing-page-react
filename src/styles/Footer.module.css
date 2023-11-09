@@ -69,7 +69,7 @@
   align-content: space-between;
 }
 
-.newsletterAndCopyright div:first-child {
+.newsletterAndCopyright form {
   display: flex;
   gap: 20px;
 }
