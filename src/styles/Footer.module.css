@@ -71,6 +71,7 @@
 
 .newsletterAndCopyright form {
   display: flex;
+  align-items: start;
   gap: 20px;
 }
 
@@ -80,7 +81,29 @@
   padding: 15px 35px;
 }
 
-.newsletterAndCopyright p {
+.errorMessage,
+.successMessage {
+  padding-top: 5px;
+  padding-left: 35px;
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.successMessage {
+  color: limegreen;
+}
+
+.desktopCopyright {
   text-align: end;
 }
 

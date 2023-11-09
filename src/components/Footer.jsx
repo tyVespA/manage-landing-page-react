@@ -5,6 +5,25 @@ import LogoWhite from "../assets/images/logoWhite.svg";
 
 function Footer() {
   const [email, setEmail] = useState("");
+  const [isEmailValid, setIsEmailValid] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  function checkEmail(email) {
+    const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    console.log(emailRegex.test(email));
+    if (emailRegex.test(email)) {
+      setIsEmailValid(true);
+    } else {
+      setIsEmailValid(false);
+    }
+  }
+
+  function handleSubmit(e, email) {
+    console.log(formSubmitted);
+    e.preventDefault();
+    checkEmail(email);
+    setFormSubmitted(true);
+  }
 
   return (
     <footer className={styles.footerContainer}>
@@ -71,18 +90,29 @@ function Footer() {
           </ul>
         </div>
         <div className={styles.newsletterAndCopyright}>
-          <form
-            // onSubmit={(e) => {
-            //   e.preventDefault();
-            // }}
-            noValidate
-          >
-            <input
-              type="email"
-              placeholder="Updates in your inbox…"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
+          <form onSubmit={(e) => handleSubmit(e, email)} noValidate>
+            <div>
+              <input
+                type="email"
+                placeholder="Updates in your inbox…"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <p
+                className={`${styles.errorMessage} ${styles.hidden} ${
+                  !isEmailValid && formSubmitted && styles.shown
+                }`}
+              >
+                Please insert a valid email
+              </p>
+              <p
+                className={`${styles.successMessage} ${styles.hidden} ${
+                  isEmailValid && formSubmitted && styles.shown
+                }`}
+              >
+                Thank you for subscribing!
+              </p>
+            </div>
             <Button type="primaryNoShadow" shadow="noShadow">
               GO
             </Button>
