@@ -10,7 +10,6 @@ function Footer() {
 
   function checkEmail(email) {
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-    console.log(emailRegex.test(email));
     if (emailRegex.test(email)) {
       setIsEmailValid(true);
     } else {
@@ -19,7 +18,6 @@ function Footer() {
   }
 
   function handleSubmit(e, email) {
-    console.log(formSubmitted);
     e.preventDefault();
     checkEmail(email);
     setFormSubmitted(true);
