@@ -10,7 +10,7 @@ function Testimonial({ name, children }) {
 
   return (
     <div className={styles.testimonial}>
-      <img src={`/public/avatar-${retrieveFirstName(name)}.png`} alt="Avatar" />
+      <img src={`/avatar-${retrieveFirstName(name)}.png`} alt="Avatar" />
       <p className={styles.name}>{name}</p>
       <p>{children}</p>
     </div>
