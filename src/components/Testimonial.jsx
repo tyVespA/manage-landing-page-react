@@ -5,7 +5,7 @@ import styles from "../styles/Testimonial.module.css";
 function Testimonial({ name, children }) {
   function retrieveFirstName(name) {
     const firstName = name.split(" ");
-    return firstName[0];
+    return firstName[0].toLowerCase();
   }
 
   return (
