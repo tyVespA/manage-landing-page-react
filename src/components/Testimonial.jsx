@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
-import React from "react";
 import styles from "../styles/Testimonial.module.css";
 
 function Testimonial({ name, children }) {
   function retrieveFirstName(name) {
+    // eslint-disable-next-line react/prop-types
     const firstName = name.split(" ");
     return firstName[0].toLowerCase();
   }
